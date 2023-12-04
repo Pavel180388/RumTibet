@@ -1,0 +1,366 @@
+@font-face {
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.container{
+    max-width: 1197px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #1a3e3e;
+    border-radius: 4px;
+    height: 52px;
+    padding: 0;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: .192px;
+    color: #fdfdfd;
+    background: #1a3e3e;
+    transition: all .3s;
+    cursor: pointer
+}
+
+.title{
+    margin: 0 0 40px;
+    color: #18121E;
+    font-family: Nunito Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 38.4px */
+}
+
+.subtitle{
+    margin: 0 0 8px;
+    font-family: Nunito Sans;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 20px; /* 83.333% */
+    color: #F2BE22;
+}
+
+
+
+/* START */
+
+.start{
+    background-image: url(../img/start-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 82px;
+
+}
+
+.header{
+    display: block;
+}
+
+
+.header__wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 16px;
+}
+
+
+.header__logo{
+    margin-right: auto;
+}
+
+.header__nav {
+    margin-right: 49px
+}
+
+.header__list {
+    color: #FDFDFD;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 24px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.header__item-link{
+    color: inherit;
+    transition: all .1s;
+}
+
+.header__item-link:hover{
+    color: #F2BE22;
+}
+
+.header__consultation{
+    padding: 0;
+    width: 157px;
+    height: 44px;
+    background: #1A3E3E;
+    color: #FDFDFD;
+    transition: all 0.3s;
+}
+
+.header__consultation:hover{
+    border: 1px solid #1A3E3E;
+    background: #fdfdfd;
+    color: #1A3E3E;
+}
+
+.start {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.start__info{
+    padding: 416px 0 82px;
+}
+
+.start__title{
+    margin: 0 0 41px;
+    text-transform: uppercase;
+    font-family: Nunito Sans;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 150%; /* 75px */
+    letter-spacing: 1px;
+    color: #FDFDFD;
+}
+
+.start__search{
+    display: flex;
+    border-radius: 10px;
+    padding: 40px 42px;
+    background: rgba(255, 255, 255, 0.20);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    gap: 24px;
+}
+
+.start__label{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+}
+
+.start__span{
+    margin: 8px 0 0 8px;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #FDFDFD;
+}
+
+.start__location,
+.start__quantity{
+    border: 1px solid #E1E3E4;
+    border-radius: 8px;
+    padding: 0px 16px;
+    height: 52px;
+    font-family: Nunito Sans;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FDFDFD;
+    background: rgba(0, 0, 0, 0);
+}
+
+.start__block-date{
+    display: flex;
+    border: 1px solid #e1e3e4;
+    border-radius: 8px;
+}
+
+.start__date {
+    flex: 1;
+    border: 0;
+    padding: 0 8px;
+    height: 52px;
+    font-family: Nunito Sans;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FDFDFD;
+    background-color: rgba(0,0,0,0)
+}
+
+.start__date::-webkit-calendar-picker-indicator {
+    filter: invert(1)
+}
+
+.start__date+.start__date {
+    margin-left: 5px
+}
+
+.start__search-programm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FDFDFD;
+    border-radius: 4px;
+    padding: 0;
+    width: 213px;
+    height: 52px;
+    font-family: Nunito Sans;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: .192px;
+    background: #FDFDFD;
+    color: #1A3E3E;
+    transition: all 0.3s;
+}
+
+.start__search-programm:hover{
+    border: 1px solid #fdfdfd;
+    color: #fdfdfd;
+    background: #1a3e3e;
+
+}
+
+
+
+/* SECTION ABOUT */
+
+.about__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0;
+    gap: 15px;
+
+}
+
+.about__media{
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+}
+
+.about__video{
+    position: relative;
+    margin: -274px 0 0 130px;
+}
+
+.about__video-btn{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(253,253,253,.6);
+    transition: all .3s;
+    will-change: transform;
+    cursor: pointer;
+}
+
+.about__video-btn:hover {
+    transform: scale(1.2)
+}
+
+.about__video-btn:hover .about__video-play {
+    transform: scale(1.2)
+}
+
+
+
+
+
+
+.about__content{
+    width: 580px;
+}
+
+.about__text{
+    margin: 0 0 40px;
+    font-family: Nunito Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%; /* 27px */
+    color: #18121E;
+}
+
+.about__subtitle{
+    color: #F2BE22;
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 83.333% */
+    padding-bottom: 8px;
+}
+
+
+.about__btn{
+    width: 200px;
+    height: 52px;
+    transition:  all 0.3s;;
+}
+
+.about__btn:hover{
+    border: 1px solid #1A3E3E;
+    background: #fdfdfd;
+    color: #1A3E3E;
+}
+
+
+
+
+
+/* FOOTER */
+
+footer{
+    width: auto;
+    height: 587px;
+    background-color: #1A3E3E;
+}
